@@ -1,0 +1,54 @@
+{
+  "name": "react-use-chessboard",
+  "version": "1.0.0",
+  "description": "A React hook which provides a chessboard component and a chess game engine. Uses LiChess Chessground and Chess.js.",
+  "type": "module",
+  "main": "./dist/esm/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm",
+    "build:esm": "tsc",
+    "prepare": "npm run build",
+    "dev": "npm run build:esm -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chess-opening-trainer/react-chessboard.git"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "chess",
+    "chessboard",
+    "chessground",
+    "lichess",
+    "typescript",
+    "hook"
+  ],
+  "author": "Anton Forsman",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/chess-opening-trainer/react-chessboard/issues"
+  },
+  "homepage": "https://github.com/chess-opening-trainer/react-chessboard#readme",
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.6",
+    "chessground": "^8.3.13"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.6.0"
+  }
+}
